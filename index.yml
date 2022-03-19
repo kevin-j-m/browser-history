@@ -1,0 +1,73 @@
+---
+libpq:
+  term: "fatal error: ‘libpq-fe.h’ file not found"
+  results:
+    - rank: 1
+      title: "ruby on rails - Can't find the 'libpq-fe.h header when trying to install pg gem - Stack Overflow"
+      url: "https://stackoverflow.com/questions/6040583/cant-find-the-libpq-fe-h-header-when-trying-to-install-pg-gem"
+    - rank: 2
+      title: "ruby on rails - pg 1.0.0 `fatal error: 'libpq-fe.h' file not found` - Stack Overflow"
+      url: "https://stackoverflow.com/questions/50272096/pg-1-0-0-fatal-error-libpq-fe-h-file-not-found"
+    - rank: 3
+      title: "can’t find the ‘libpq-fe.h header *** extconf.rb failed ***"
+      url: "https://rubyinrails.com/2014/01/22/cant-find-libpq-fe-h-header-extconf-rb-failed/"
+strftime:
+  term: "ruby strftime"
+  results:
+    - rank: 1
+      title: "Class: DateTime (Ruby 3.1.1)"
+      url: "https://ruby-doc.org/stdlib-3.1.1/libdoc/date/rdoc/DateTime.html#method-i-strftime"
+    - rank: 2
+      title: "strftime (DateTime) - APIdock"
+      url: "https://apidock.com/ruby/DateTime/strftime"
+    - rank: 3
+      title: "Ruby Date Format (strftime) Cheat Sheet"
+      url: "https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet"
+activerecord-mistakes:
+  term: "3 ActiveRecord Mistakes"
+  results:
+    - rank: 1
+      title: "3 ActiveRecord Mistakes That Slow Down Rails Apps: Count, Where and Present"
+      url: "https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html"
+    - rank: 2
+      title: "3 ActiveRecord Mistakes That Slow Down Rails Apps: Count, Where and Present : ruby"
+      url: "https://www.reddit.com/r/ruby/comments/ael4n0/3_activerecord_mistakes_that_slow_down_rails_apps/"
+    - rank: 3
+      title: "Nate Berkopec on Twitter: \"New post: 3 ActiveRecord Mistakes That Slow Down Rails Apps: Count, Where and Present https://t.co/ODJtSIeJLl\" / Twitter"
+      url: "https://twitter.com/nateberkopec/status/1083412518393933825"
+bullet:
+  term: "ruby n+1 bullet alternative"
+  results:
+    - rank: 1
+      title: "bullet Alternatives - Ruby Profiler | LibHunt"
+      url: "https://ruby.libhunt.com/bullet-alternatives"
+    - rank: 2
+      title: "Squash N+1 queries early with n_plus_one_control test matchers for Ruby and Rails — Martian Chronicles, Evil Martians’ team blog"
+      url: "https://evilmartians.com/chronicles/squash-n-plus-one-queries-early-with-n-plus-one-control-test-matchers-for-ruby-and-rails"
+    - rank: 3
+      title: "4 Non-standard Ways to Fix N+1 Queries in Rails "
+      url: "https://pawelurbanek.com/rails-n-1-queries"
+assert-enqueued-with:
+  term: "rails assert_enqueued_with"
+  results:
+    - rank: 1
+      title: "ActiveJob::TestHelper"
+      url: "https://api.rubyonrails.org/v7.0.0/classes/ActiveJob/TestHelper.html#method-i-assert_enqueued_with"
+    - rank: 2
+      title: "assert_enqueued_with (ActiveJob::TestHelper) - APIdock"
+      url: "https://apidock.com/rails/v6.0.0/ActiveJob/TestHelper/assert_enqueued_with"
+    - rank: 3
+      title: "undefined method 'assert_enqueued_with' · Issue #18624 · rails/rails"
+      url: "https://github.com/rails/rails/issues/18624"
+sandi-metz:
+  term: "Sandi Metz four rules"
+  results:
+    - rank: 1
+      title: "Sandi Metz' Rules For Developers"
+      url: "https://thoughtbot.com/blog/sandi-metz-rules-for-developers"
+    - rank: 2
+      title: "Rules, by Sandi Metz"
+      url: "https://www.rockyourcode.com/rules-by-sandi-metz/"
+    - rank: 3
+      title: "Sandi Metz's Rules for OOP"
+      url: "https://yiming.dev/blog/2017/08/23/sandi-metzs-rules-for-oop/"
