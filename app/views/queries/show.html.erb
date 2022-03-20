@@ -12,3 +12,6 @@
     <p>No results found</p>
   <% end %>
 </div>
+
+<h4>Comments</h4>
+<%= render partial: "comments/form", locals: { comment: Comment.new, commentable: @query } %>
