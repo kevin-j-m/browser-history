@@ -14,4 +14,7 @@
 </div>
 
 <h4>Comments</h4>
+
+<%= render @query.comments.with_all_rich_text %>
+
 <%= render partial: "comments/form", locals: { comment: Comment.new, commentable: @query } %>

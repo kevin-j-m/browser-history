@@ -1,6 +1,9 @@
 class QueriesController < ApplicationController
   def index
-    @queries = Query.all.order(searched_at: :desc)
+    @queries = Query
+      .includes(comments: :rich_text_body)
+      .all
+      .order(searched_at: :desc)
   end
 
   def new
