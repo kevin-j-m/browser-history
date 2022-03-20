@@ -1,5 +1,5 @@
 class Query < ApplicationRecord
-  has_many :comments, as: :commentable
+  has_many :comments, as: :commentable, dependent: :destroy_async
 
   delegate :results?, :results, to: :search_result
 
