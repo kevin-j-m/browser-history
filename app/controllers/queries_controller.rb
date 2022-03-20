@@ -1,4 +1,8 @@
 class QueriesController < ApplicationController
+  def index
+    @queries = Query.all.order(searched_at: :desc)
+  end
+
   def new
     @query = Query.new
   end
