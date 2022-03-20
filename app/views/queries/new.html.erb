@@ -1,4 +1,5 @@
 <%= form_with model: @query do |form| %>
+  <%= form.label :search_term, "Search Term" %>
   <%= form.text_field :search_term %>
   <%= form.submit %>
 <% end %>

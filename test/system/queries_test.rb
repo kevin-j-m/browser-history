@@ -1,39 +1,13 @@
 require "application_system_test_case"
 
 class QueriesTest < ApplicationSystemTestCase
-  # setup do
-  #   @foo = foos(:one)
-  # end
+  test "create a new query" do
+    visit new_query_url
 
-  # test "visiting the index" do
-  #   visit foos_url
-  #   assert_selector "h1", text: "Foos"
-  # end
+    fill_in "Search Term", with: "making a new search"
+    click_on "Create Query"
 
-  # test "should create foo" do
-  #   visit foos_url
-  #   click_on "New foo"
-
-  #   click_on "Create Foo"
-
-  #   assert_text "Foo was successfully created"
-  #   click_on "Back"
-  # end
-
-  # test "should update Foo" do
-  #   visit foo_url(@foo)
-  #   click_on "Edit this foo", match: :first
-
-  #   click_on "Update Foo"
-
-  #   assert_text "Foo was successfully updated"
-  #   click_on "Back"
-  # end
-
-  # test "should destroy Foo" do
-  #   visit foo_url(@foo)
-  #   click_on "Destroy this foo", match: :first
-
-  #   assert_text "Foo was successfully destroyed"
-  # end
+    assert_text "making a new search"
+    assert_text "No results found"
+  end
 end
