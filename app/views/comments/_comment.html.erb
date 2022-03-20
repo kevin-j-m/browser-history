@@ -1,3 +1,10 @@
 <%= turbo_frame_tag comment do %>
-  <%= comment.body %>
+  <div class="flex flex-row py-1">
+    <p class="font-bold text-gray-800 pr-1 w-1/6">
+      <%= l(comment.created_at, format: :date) %>:
+    </p>
+    <div class="w-5/6">
+      <%= comment.body %>
+    </div>
+  </div>
 <% end %>

@@ -14,4 +14,8 @@ class SearchResult
   def url
     @result["url"]
   end
+
+  def host
+    URI(url).host
+  end
 end

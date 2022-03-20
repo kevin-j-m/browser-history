@@ -1,20 +1,31 @@
-<div id="<%= dom_id @query %>">
-  <p>
+<div id="<%= dom_id @query %>" class="flex flex-wrap w-full">
+  <h1 class="w-full leading-8 text-5xl pb-10">
     <%= @query.search_term %>
-  </p>
+  </h1>
   <% if @query.results? %>
-    <ul>
+    <ol class="w-full pl-10">
       <% @query.results.each do |result| %>
-        <li><%= result.title %></li>
+        <li class="w-full flex flex-wrap pb-5">
+          <div class="text-5xl text-bold pr-3">
+            <%= result.rank %>
+          </div>
+          <div class="pl=3 flex flex-col">
+            <%= link_to result.title, result.url, class: "text-gray-800 underline visited:decoration-pink-500" %>
+            <%= result.host %>
+          </div>
+        </li>
       <% end %>
-    </ul>
+    </ol>
   <% else %>
-    <p>No results found</p>
+    <p class="w-full pl-10 text-pink-500 font-bold">No results found</p>
   <% end %>
+
+  <div class"w-full">
+    <h2 class="w-full text-3xl pb-2">Comments</h2>
+
+    <%= render @query.comments.with_all_rich_text %>
+
+    <%= render partial: "comments/form", locals: { comment: Comment.new, commentable: @query } %>
+  </div>
 </div>
 
-<h4>Comments</h4>
-
-<%= render @query.comments.with_all_rich_text %>
-
-<%= render partial: "comments/form", locals: { comment: Comment.new, commentable: @query } %>
