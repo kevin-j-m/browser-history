@@ -27,7 +27,7 @@ class YamlIndexTest < ActiveSupport::TestCase
 
     result = index.find("fatal error: ‘libpq-fe.h’ file not found")
 
-    assert_equal({ "term" => "fatal error: ‘libpq-fe.h’ file not found", results: [] }, result)
+    assert_equal({ "term" => "fatal error: ‘libpq-fe.h’ file not found", "results" => [] }, result)
   end
 
   test "find returns no result when no matching search term exists" do
@@ -36,6 +36,6 @@ class YamlIndexTest < ActiveSupport::TestCase
 
     result = index.find("no result")
 
-    assert_equal({ "term" => "no result", results: [] }, result)
+    assert_equal({ "term" => "no result", "results" => [] }, result)
   end
 end

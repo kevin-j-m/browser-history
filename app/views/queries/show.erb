@@ -1,0 +1,8 @@
+SHOW
+<%= turbo_frame_tag "query" do %>
+  <ul>
+    <% @results.each do |result| %>
+      <li><%= result["title"] %></li>
+    <% end %>
+  </ul>
+<% end %>

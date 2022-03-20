@@ -2,7 +2,7 @@ require "test_helper"
 
 class FakeIndex
   def find(term)
-    { "term" => term, results: [] }
+    { "term" => term, "results" => [] }
   end
 end
 
@@ -13,7 +13,7 @@ class SearchEngineTest < ActiveSupport::TestCase
     engine = SearchEngine.new(index)
 
     assert_equal(
-      { "term" => "how do you build a search engine?", results: [] },
+      { "term" => "how do you build a search engine?", "results" => [] },
       engine.search("how do you build a search engine?")
     )
   end

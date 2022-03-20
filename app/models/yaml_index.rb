@@ -18,6 +18,6 @@ class YamlIndex
   private
 
   def no_result(term)
-    { "term" => term, results: [] }
+    { "term" => term, "results" => [] }
   end
 end
