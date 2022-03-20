@@ -12,11 +12,11 @@
       <div class="pl-3 py-2">
         <div class="flex flex-wrap">
           <%= heroicon "calendar", variant: :outline, options: { class: "h-5 w-5" } %>
-          <p class="pl-2"><%= l(query.searched_at, format: :date) %></p>
+          <p class="pl-2 text-sm"><%= l(query.searched_at, format: :date) %></p>
         </div>
         <div class="flex flex-wrap">
           <%= heroicon "clock", variant: :outline, options: { class: "h-5 w-5" } %>
-          <p class="pl-2"><%= l(query.searched_at, format: :time_of_day) %></p>
+          <p class="pl-2 text-sm"><%= l(query.searched_at, format: :time_of_day) %></p>
         </div>
       </div>
 

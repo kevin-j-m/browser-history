@@ -17,8 +17,19 @@
       <% end %>
     </ol>
   <% else %>
-    <p class="w-full pl-10 text-pink-500 font-bold pb-10">No results found</p>
+    <p class="w-full pl-10 text-pink-500 font-bold pb-7">No results found</p>
   <% end %>
+
+  <div class="w-full pl-5 pb-5">
+    <div class="flex flex-wrap">
+      <%= heroicon "calendar", variant: :outline, options: { class: "h-5 w-5" } %>
+      <p class="pl-2 text-sm"><%= l(@query.searched_at, format: :date) %></p>
+    </div>
+    <div class="flex flex-wrap">
+      <%= heroicon "clock", variant: :outline, options: { class: "h-5 w-5" } %>
+      <p class="pl-2 text-sm"><%= l(@query.searched_at, format: :time_of_day) %></p>
+    </div>
+  </div>
 
   <div class"w-full">
     <h2 class="w-full text-3xl pb-2">Comments</h2>

@@ -1,5 +1,5 @@
 <%= form_with model: [commentable, comment], id: dom_id(comment), class: "pt-3" do |form| %>
-  <p class="border-t-2 border-gray-800 text-xl pb-3">New comment</p>
+  <p class="border-t-2 border-gray-800 text-3xl py-3">New comment</p>
   <% if form.object.errors.any? %>
     <div>
       <% form.object.errors.full_messages.each do |message|%>

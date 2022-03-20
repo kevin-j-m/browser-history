@@ -33,5 +33,5 @@ en:
   hello: "Hello world"
   time:
     formats:
-      date: "%B %-d, %Y"
+      date: "%b %-d, %Y"
       time_of_day: "%I:%M %p"
