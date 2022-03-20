@@ -50,7 +50,7 @@ class SearchTest < ActiveSupport::TestCase
     result = search.results.first
 
     assert_equal 1, result.rank
-    assert_equal "An example", result.title
+    assert_equal "Some information you searched for", result.title
     assert_equal "https://example.com", result.url
   end
 

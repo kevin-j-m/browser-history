@@ -5,7 +5,7 @@ class FakeIndex
         "term" => "example",
         "results" => [
           "rank" => 1,
-          "title" => "An example",
+          "title" => "Some information you searched for",
           "url" => "https://example.com",
         ]
       }
