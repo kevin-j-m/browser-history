@@ -9,9 +9,14 @@ class Queries::CommentsController < ApplicationController
     if @comment.save
       redirect_to @commentable
     else
-      puts "bad"
-      puts "#{dom_id(@comment)}"
-      format.turbo_stream { render turbo_stream.replace(dom_id(@comment), partial: "comments/form", locals: { comment: @comment, commentable: @commentable }) }
+      format.turbo_stream do
+        render turbo_stream:
+          turbo_stream.replace(
+            dom_id(@comment),
+            partial: "comments/form",
+            locals: { comment: @comment, commentable: @commentable }
+          )
+      end
       format.html { redirect_to @commentable }
     end
     end
