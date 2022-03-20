@@ -1,8 +1,6 @@
 class YamlIndex
-  attr_reader :index
-
-  def load
-    @index = YAML
+  def set
+    @index ||= YAML
       .load_file(Rails.root.join('index.yml'))
       .each_with_object({}) do |(_k, value), hash|
         hash[value["term"]] = value

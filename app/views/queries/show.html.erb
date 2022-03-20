@@ -2,10 +2,10 @@
   <p>
     <%= @query.search_term %>
   </p>
-  <% if @query.results.present? %>
+  <% if @query.results? %>
     <ul>
       <% @query.results.each do |result| %>
-        <li><%= result["title"] %></li>
+        <li><%= result.title %></li>
       <% end %>
     </ul>
   <% else %>

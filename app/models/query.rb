@@ -1,11 +1,16 @@
 class Query < ApplicationRecord
   has_many :comments, as: :commentable
 
-  def results
-    index = YamlIndex.new
-    index.load
-    engine = SearchEngine.new(index)
+  delegate :results?, :results, to: :search_result
 
-    engine.search(search_term)["results"]
+  private
+
+  def search_result(search_engine = SearchEngine.new)
+    @search_result ||= execute_search(search_engine)
+  end
+
+  def execute_search(search_engine)
+    search = Search.new(query: self, search_engine: search_engine)
+    search.execute
   end
 end
