@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Run All Tests
+
+```bash
+$ rails test:all
+```
+
+## Run Local Server
+
+```bash
+$ /.bin/dev
+```

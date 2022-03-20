@@ -5,7 +5,7 @@ class QueriesTest < ApplicationSystemTestCase
     visit new_query_url
 
     fill_in "Search Term", with: "making a new search"
-    click_on "Create Query"
+    click_on "Mine"
 
     assert_text "making a new search"
     assert_text "No results found"
@@ -15,7 +15,7 @@ class QueriesTest < ApplicationSystemTestCase
     visit new_query_url
 
     fill_in "Search Term", with: "ruby strftime"
-    click_on "Create Query"
+    click_on "Mine"
 
     assert_text "ruby strftime"
     assert_text "Class: DateTime (Ruby 3.1.1)"
