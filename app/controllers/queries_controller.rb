@@ -7,20 +7,14 @@ class QueriesController < ApplicationController
     @query = Query.new(query_params)
 
     if @query.save
-      redirect_to @query, status: :see_other
+      redirect_to @query
     else
       render :new, status: :unprocessable_entity
     end
   end
 
   def show
-    query = Query.find(params[:id])
-
-    index = YamlIndex.new
-    index.load
-    engine = SearchEngine.new(index)
-
-    @results = engine.search(query.search_term)["results"]
+    @query = Query.find(params[:id])
   end
 
   private
