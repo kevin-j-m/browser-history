@@ -10,14 +10,14 @@
             <%= result.rank %>
           </div>
           <div class="pl=3 flex flex-col">
-            <%= link_to result.title, result.url, class: "text-gray-800 underline visited:decoration-pink-500" %>
+            <%= link_to result.title, result.url, class: "text-gray-800 underline visited:decoration-highlight" %>
             <%= result.host %>
           </div>
         </li>
       <% end %>
     </ol>
   <% else %>
-    <p class="w-full pl-10 text-pink-500 font-bold pb-7">No results found</p>
+    <p class="w-full pl-10 text-highlight font-bold pb-7">No results found</p>
   <% end %>
 
   <div class="w-full pl-5 pb-5">
