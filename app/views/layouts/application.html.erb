@@ -22,10 +22,10 @@
       <div class="w-full flex-grow flex items-center w-auto block pt-0" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-white no-underline" href="#">Active Search</a>
+            <%= link_to "Active Search", root_url, class: request.path == queries_path ? "inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" : "inline-block py-2 px-4 text-white no-underline" %>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">History</a>
+            <%= link_to "History", queries_path, class: request.path == queries_path ? "inline-block py-2 px-4 text-white no-underline" : "inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" %>
           </li>
         </ul>
       </div>

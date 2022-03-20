@@ -2,7 +2,9 @@
   <h1 class="w-full leading-8 text-5xl pb-3">
     Search History
   </h1>
-  <p class="w-full text-xl pb-7">Searches: <%= @queries.load.size %></p>
+  <p class="w-full text-xl pb-7 pl-3">
+    Searches: <%= @queries.load.size %>
+  </p>
 
   <% @queries.each do |query| %>
     <div id="<%= dom_id query %>" class="w-full">
