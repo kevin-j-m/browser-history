@@ -13,16 +13,14 @@
   <% @queries.each do |query| %>
     <div id="<%= dom_id query %>" class="w-full">
       <h2 class="w-full text-3xl"><%= link_to query.search_term, query, class: "underline" %></h2>
-      <div class="pl-3 py-2">
+      <div class="pl-5 py-2">
         <%= render(DateAndTimeComponent.new(query.searched_at)) %>
       </div>
 
       <% if query.comments.any? %>
-        <h3 class="w-full text-xl pb-2 pl-3">Comments</h3>
+        <h3 class="w-full text-xl pb-2">Comments</h3>
 
-        <div class="pl-6">
-          <%= render query.comments %>
-        </div>
+        <%= render query.comments %>
       <% end %>
     </div>
   <% end %>
