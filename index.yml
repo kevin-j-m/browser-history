@@ -71,3 +71,15 @@ sandi-metz:
     - rank: 3
       title: "Sandi Metz's Rules for OOP"
       url: "https://yiming.dev/blog/2017/08/23/sandi-metzs-rules-for-oop/"
+Kevin Murphy:
+  term: "Kevin Murphy"
+  results:
+    - rank: 1
+      title: "Personal Website"
+      url: "https://kevinjmurphy.com/"
+    - rank: 2
+      title: "@kevin_j_m / Twitter"
+      url: "https://twitter.com/kevin_j_m"
+    - rank: 3
+      title: "Vendr | The Saas buying platform"
+      url: "https://vendr.com/"
