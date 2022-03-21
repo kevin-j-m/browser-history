@@ -6,7 +6,7 @@ class SearchHistoryTest < ActiveSupport::TestCase
   test "clear deletes all queries" do
     Query.create!(search_term: "looking for something")
 
-    SearchHistory.new.clear
+    SearchHistory.clear
 
     assert_equal 0, Query.count
   end
@@ -16,7 +16,7 @@ class SearchHistoryTest < ActiveSupport::TestCase
     query.comments.create!(body: "some information")
 
     perform_enqueued_jobs do
-      SearchHistory.new.clear
+      SearchHistory.clear
     end
 
     assert_equal 0, Comment.count

@@ -72,5 +72,5 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 2.0"
-gem "heroicon"
+gem "rails_heroicon"
 gem "view_component"
