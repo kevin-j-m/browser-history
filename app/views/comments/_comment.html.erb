@@ -1,17 +1,10 @@
 <%= turbo_frame_tag comment do %>
   <div class="flex flex-row py-1">
-    <div class="pl-5 pb-5 w-1/6">
-      <div class="flex flex-nowrap">
-        <%= heroicon "calendar", variant: :outline, options: { class: "h-5 w-5" } %>
-        <p class="pl-2 text-sm"><%= l(comment.created_at, format: :date) %></p>
-      </div>
-      <div class="flex flex-nowrap">
-        <%= heroicon "clock", variant: :outline, options: { class: "h-5 w-5" } %>
-        <p class="pl-2 text-sm"><%= l(comment.created_at, format: :time_of_day) %></p>
-      </div>
+    <div class="pl-5 pb-5 w-3/12">
+      <%= render(DateAndTimeComponent.new(timestamp: comment.created_at)) %>
     </div>
 
-    <div class="flex-wrap w-5/6">
+    <div class="flex-wrap w-9/12">
       <%= comment.body %>
     </div>
   </div>

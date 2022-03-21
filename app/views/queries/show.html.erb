@@ -21,14 +21,7 @@
   <% end %>
 
   <div class="w-full pl-5 pb-5">
-    <div class="flex flex-wrap">
-      <%= heroicon "calendar", variant: :outline, options: { class: "h-5 w-5" } %>
-      <p class="pl-2 text-sm"><%= l(@query.searched_at, format: :date) %></p>
-    </div>
-    <div class="flex flex-wrap">
-      <%= heroicon "clock", variant: :outline, options: { class: "h-5 w-5" } %>
-      <p class="pl-2 text-sm"><%= l(@query.searched_at, format: :time_of_day) %></p>
-    </div>
+    <%= render(DateAndTimeComponent.new(timestamp: @query.searched_at)) %>
   </div>
 
   <div class"w-full">

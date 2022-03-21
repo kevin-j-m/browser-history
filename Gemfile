@@ -73,3 +73,4 @@ end
 
 gem "tailwindcss-rails", "~> 2.0"
 gem "heroicon"
+gem "view_component"
