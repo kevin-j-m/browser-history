@@ -14,7 +14,7 @@
     <div id="<%= dom_id query %>" class="w-full">
       <h2 class="w-full text-3xl"><%= link_to query.search_term, query, class: "underline" %></h2>
       <div class="pl-3 py-2">
-        <%= render(DateAndTimeComponent.new(timestamp: query.searched_at)) %>
+        <%= render(DateAndTimeComponent.new(query.searched_at)) %>
       </div>
 
       <% if query.comments.any? %>

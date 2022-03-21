@@ -1,7 +1,7 @@
 <%= turbo_frame_tag comment do %>
   <div class="flex flex-row py-1">
     <div class="pl-5 pb-5 w-3/12">
-      <%= render(DateAndTimeComponent.new(timestamp: comment.created_at)) %>
+      <%= render(DateAndTimeComponent.new(comment.created_at)) %>
     </div>
 
     <div class="flex-wrap w-9/12">
