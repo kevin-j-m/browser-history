@@ -74,3 +74,7 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 gem "rails_heroicon"
 gem "view_component"
+
+group :development, :test do
+  gem 'bullet'
+end
