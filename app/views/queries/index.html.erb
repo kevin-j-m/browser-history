@@ -7,7 +7,7 @@
       Searches: <%= @queries.load.size %>
     </p>
 
-    <%= link_to "Clear", SearchHistory.new, class: "ml-7 rounded bg-primary hover:bg-primaryhover text-white font-bold py-2 px-4 my-2", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+    <%= link_to "Clear", SearchHistory.new, class: "ml-7 rounded bg-primary hover:bg-highlight text-white font-bold py-2 px-4 my-2", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   </div>
 
   <% @queries.each do |query| %>

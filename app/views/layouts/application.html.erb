@@ -12,20 +12,20 @@
   </head>
 
   <body>
-    <nav class="flex items-center justify-between flex-wrap bg-primary p-6 fixed w-full z-10 top-0">
+    <nav class="flex items-center justify-between flex-wrap bg-primary py-3 px-6 fixed w-full z-10 top-0">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <%= link_to root_url, class: "text-white no-underline hover:text-white hover:no-underline" do %>
-          <span class="text-2xl pl-2">Alluvial Deposit</span>
+          <span class="text-3xl pl-2">Alluvial Deposit</span>
         <% end %>
       </div>
 
       <div class="w-full flex-grow flex items-center w-auto block pt-0" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <%= link_to "Active Search", root_url, class: request.path == queries_path ? "inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" : "inline-block py-2 px-4 text-white no-underline" %>
+            <%= link_to "Active Search", root_url, class: request.path == queries_path ? "inline-block text-black no-underline hover:text-gray-200 hover:text-underline py-2 px-4" : "inline-block py-2 px-4 text-xl text-white no-underline" %>
           </li>
           <li class="mr-3">
-            <%= link_to "History", queries_path, class: request.path == queries_path ? "inline-block py-2 px-4 text-white no-underline" : "inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" %>
+            <%= link_to "History", queries_path, class: request.path == queries_path ? "inline-block py-2 px-4 text-xl text-white no-underline" : "inline-block text-black no-underline hover:text-gray-200 hover:text-underline py-2 px-4" %>
           </li>
         </ul>
       </div>

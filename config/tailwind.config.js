@@ -12,9 +12,8 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        highlight: '#ec4899',
-        primary: '#1f2937',
-        primaryhover: '#111827',
+        highlight: '#663b86',
+        primary: '#156ff7',
       }
     },
   },

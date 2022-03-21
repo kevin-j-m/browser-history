@@ -1,5 +1,5 @@
 <%= form_with model: [commentable, comment], id: dom_id(comment), class: "pt-3" do |form| %>
-  <p class="border-t-2 border-primary text-3xl py-3">New comment</p>
+  <p class="border-t-2 border-highlight text-3xl py-3">New comment</p>
   <% if form.object.errors.any? %>
     <div>
       <% form.object.errors.full_messages.each do |message|%>
@@ -9,5 +9,5 @@
   <% end %>
 
   <%= form.rich_text_area :body  %>
-  <%= form.submit "Create", class: "rounded bg-primary hover:bg-primaryhover text-white font-bold py-2 px-4 my-2" %>
+  <%= form.submit "Create", class: "rounded bg-primary hover:bg-highlight text-white font-bold py-2 px-4 my-2" %>
 <% end %>
