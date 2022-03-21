@@ -1,5 +1,7 @@
 class SearchHistory
-  def clear
+  include ActiveModel::Model
+
+  def self.clear
     Query.destroy_all
     # .delete_all is more performant; however, it won't
     # delete associated records.
