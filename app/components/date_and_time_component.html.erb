@@ -1,8 +1,8 @@
 <div class="flex flex-wrap">
   <%= heroicon "calendar", variant: :outline, size: 20 %>
-  <p class="pl-2 text-sm" id="date"><%= l(@timestamp, format: :date) %></p>
+  <p class="pl-2 text-sm" id="date"><%= helpers.l_datetime(@timestamp, placeholder: "Unknown", format: :date) %></p>
 </div>
 <div class="flex flex-wrap">
   <%= heroicon "clock", variant: :outline, size: 20 %>
-  <p class="pl-2 text-sm" id="time"><%= l(@timestamp, format: :time_of_day) %></p>
+  <p class="pl-2 text-sm" id="time"><%= helpers.l_datetime(@timestamp, placeholder: "Unknown", format: :time_of_day) %></p>
 </div>

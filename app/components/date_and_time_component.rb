@@ -4,5 +4,4 @@ class DateAndTimeComponent < ViewComponent::Base
   def initialize(timestamp)
     @timestamp = timestamp
   end
-
 end

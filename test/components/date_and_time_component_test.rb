@@ -16,4 +16,10 @@ class DateAndTimeComponentTest < ViewComponent::TestCase
 
     assert_selector "p", id: "time", text: "03:25 AM"
   end
+
+  test "renders a placeholder when provided no datetime" do
+    render_inline(DateAndTimeComponent.new(nil))
+
+    assert_selector "p", id: "time", text: "Unknown"
+  end
 end
