@@ -6,19 +6,19 @@ class Queries::CommentsController < ApplicationController
     @comment = @commentable.comments.new(comment_params)
 
     respond_to do |format|
-    if @comment.save
-      redirect_to @commentable
-    else
-      format.turbo_stream do
-        render turbo_stream:
-          turbo_stream.replace(
-            dom_id(@comment),
-            partial: "comments/form",
-            locals: { comment: @comment, commentable: @commentable }
-          )
+      if @comment.save
+        redirect_to @commentable
+      else
+        format.turbo_stream do
+          render turbo_stream:
+            turbo_stream.replace(
+              dom_id(@comment),
+              partial: "comments/form",
+              locals: { comment: @comment, commentable: @commentable }
+            )
+        end
+        format.html { redirect_to @commentable }
       end
-      format.html { redirect_to @commentable }
-    end
     end
   end
 
