@@ -83,3 +83,39 @@ Kevin Murphy:
     - rank: 3
       title: "Vendr | The Saas buying platform"
       url: "https://vendr.com/"
+delete-all-callbacks:
+  term: "rails delete_all callbacks"
+  results:
+    - rank: 1
+      title: "Active Record Relation delete_all"
+      url: "https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-delete_all"
+    - rank: 2
+      title: "delete_all (ActiveRecord::Relation)"
+      url: "https://apidock.com/rails/v5.2.3/ActiveRecord/Relation/delete_all"
+    - rank: 3
+      title: "CollectionProxy `delete_all` and `destroy_all`"
+      url: "https://gist.github.com/eileencodes/5b0a2fe011dcff6203fe"
+delete-all-destroy-all:
+  term: "rails delete_all vs destroy_all"
+  results:
+    - rank: 1
+      title: "CollectionProxy `delete_all` and `destroy_all"
+      url: "https://gist.github.com/eileencodes/5b0a2fe011dcff6203fe"
+    - rank: 2
+      title: "Delete vs. Destroy: Does it even matter?"
+      url: "https://medium.com/@wkhearn/delete-vs-destroy-does-it-even-matter-8cb4db6aa660"
+    - rank: 3
+      title: "delete_all vs destroy_all"
+      url: "https://ridingwithrails.wordpress.com/2011/06/08/delete_all-vs-destroy_all/"
+rails-dependent-options:
+  term: "rails dependent options"
+  results:
+    - rank: 1
+      title: "Active Record Associations - Ruby on Rails Guides"
+      url: "https://guides.rubyonrails.org/association_basics.html#options-for-belongs-to-dependent"
+    - rank: 2
+      title: "Rails Dependent Destroy"
+      url: "https://dev.to/delbetu/rails-dependent-destroy-id3"
+    - rank: 3
+      title: "Rails 6.1 adds support for destroying in backgound"
+      url: "https://blog.saeloun.com/2020/11/18/rails-6.1-adds-support-for-destroying-dependent-associations-in-the-background.html"

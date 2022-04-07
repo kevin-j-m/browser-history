@@ -4,7 +4,7 @@ class YamlIndexTest < ActiveSupport::TestCase
   test "set has one entry per item in the index" do
     index = YamlIndex.new
 
-    assert_equal 7, index.set.size
+    assert_equal 10, index.set.size
   end
 
   test "set modifies the overall key to be the full search term" do

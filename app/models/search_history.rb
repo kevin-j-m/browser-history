@@ -5,7 +5,7 @@ class SearchHistory
     Query.destroy_all
     # .delete_all is more performant; however, it won't
     # delete associated records.
-    # Add a test to ensure that comments and its underlying 
+    # Add a test to ensure that comments and its underlying
     # rich text is also deleted, and you'll see that it's not.
     #
     # To help mitigate some of the performance here, we'll
