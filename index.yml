@@ -81,8 +81,8 @@ Kevin Murphy:
       title: "@kevin_j_m / Twitter"
       url: "https://twitter.com/kevin_j_m"
     - rank: 3
-      title: "Vendr | The Saas buying platform"
-      url: "https://vendr.com/"
+      title: "BookBub: handpicked ebook recommendations"
+      url: "https://bookbub.com/"
 delete-all-callbacks:
   term: "rails delete_all callbacks"
   results:
