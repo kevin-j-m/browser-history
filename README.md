@@ -1,7 +1,8 @@
 # Alluvial Deposit
 
-Alluvial is the world's worst search engine, written in support of a conference
-talk called "Browser History Confessional: Searching My Recent Searches".
+Alluvial is the world's worst search engine, written in support of a [conference
+talk](https://kevinjmurphy.com/browser-history) called "Browser History
+Confessional: Searching My Recent Searches".
 
 ## Abstract
 
